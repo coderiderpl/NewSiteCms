@@ -1,0 +1,24 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+
+homepage:
+    path:     /
+    defaults: { _controller: AppBundle:Homepage:index }
+
+blog:
+    path:     /blog
+    defaults: { _controller: AppBundle:Homepage:index }
+
+
+#CMS
+login:
+    path:     /cms/login/
+    defaults: { _controller: AppBundle:Security:login }
+logout:
+    path:     /cms/logout/
+
+elements:
+    path:     /cms/elements/
+    defaults: { _controller: AppBundle:Homepage:index }
